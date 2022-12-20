@@ -21,7 +21,7 @@ final class QuickLink
     private string $name;
 
     #[ORM\Column(type: Types::STRING)]
-    #[Assert\Email]
+    #[Assert\Url]
     private string $url;
 
     #[ORM\Column(type: Types::STRING, unique: true)]
